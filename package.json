@@ -1,7 +1,7 @@
 {
     "name": "google-api-client",
-    "version": "1.0.2",
-    "description": "A Promise- and REST-based client for interacting with Google APIs. The module has a very small number of dependencies and interacts entirely over HTTPS, eschewing the (rather bloated) googleapi library. Currently limited to managing tokens and dealing with Analytics Data / Accounts. I will expand functionality as I need more.",
+    "version": "1.0.3",
+    "description": "An OAuth2 Promise-based client for Google APIs. Currently limited to managing tokens and dealing with Analytics Data / Accounts.",
     "main": "./lib/index",
     "dependencies": {
         "request": "2.x.x",
