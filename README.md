@@ -1,31 +1,30 @@
--- TODO
+** Please Note : ** Major refactor makes version 2.0.x incompatible with prior
+versions. 2.0.x is now called statically. Please see the example below.
 
 A simple example:
 
 ```
-var GoogleApiClient = require('google-api-client');
-
 return new Promise(function(resolve, reject) {
 
-    var client = new GoogleApiClient();
-    var accessToken = '[YOUR_ACCESS_TOKEN]';
-    var refreshToken = '[YOUR_REFRESH_TOKEN]';
-    var clientId = '[YOUR_CLIENT_ID]';
-    var clientSecret = '[YOUR_CLIENT_SECRET]';
+    var accessToken = '[YOUR_ACCESS_TOKEN]',
+        refreshToken = '[YOUR_REFRESH_TOKEN]',
+        clientId = '[YOUR_CLIENT_ID]',
+        clientSecret = '[YOUR_CLIENT_SECRET]';
 
-    client.isTokenValid(accessToken)
+    GoogleApiClient.oauth2.isTokenValid(accessToken)
     .then(function(bool) {
         if (bool) {
             return accessToken;
         } else {
-            return client.refreshToken(refreshToken, clientId, clientSecret)
+            return GoogleApiClient.oauth2.refreshToken(refreshToken, clientId, clientSecret)
             .then(function(newAccessToken) {
                 return newAccessToken;
             });
         }
     })
     .then(function(validAccessToken) {
-        client.accounts(validAccessToken, clientId).then(function(body) {
+        GoogleApiClient.analytics.management.accounts.list(validAccessToken, clientId)
+        .then(function(body) {
             resolve(body);
         });
     });

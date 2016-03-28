@@ -1,12 +1,16 @@
 {
     "name": "google-api-client",
-    "version": "1.0.5",
-    "description": "An OAuth2 Promise-based client for Google APIs. Currently limited to managing tokens and dealing with Analytics Data / Accounts.",
+    "version": "2.0.0",
+    "description": "An OAuth2 Promise-based client for Google APIs.",
     "main": "./lib/index",
+    "devDependencies": {
+        "config": "latest"
+    },
     "dependencies": {
-        "request": "2.x.x",
-        "bluebird": "3.3.x",
-        "promiseq": "0.1.x"
+        "request"   : "2.x.x",
+        "bluebird"  : "3.3.x",
+        "promiseq"  : "0.1.x",
+        "lodash"    : "4.6.x"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
