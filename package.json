@@ -1,6 +1,6 @@
 {
     "name": "google-api-client",
-    "version": "2.0.0",
+    "version": "2.0.4",
     "description": "An OAuth2 Promise-based client for Google APIs.",
     "main": "./lib/index",
     "devDependencies": {
