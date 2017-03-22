@@ -1,32 +1,34 @@
 {
-    "name": "google-api-client",
-    "version": "2.0.5",
-    "description": "An OAuth2 Promise-based client for Google APIs.",
-    "main": "./lib/index",
-    "devDependencies": {
-        "config": "latest"
-    },
-    "dependencies": {
-        "request"   : "2.x.x",
-        "bluebird"  : "3.3.x",
-        "promiseq"  : "0.1.x",
-        "lodash"    : "4.6.x"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/cohere-io/google-api-client.git"
-    },
-    "keywords": [
-        "google",
-        "api"
-    ],
-    "author": "Kurt Freytag <kurt@cohere.io>",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/cohere-io/google-api-client/issues"
-    },
-    "homepage": "https://github.com/cohere-io/google-api-client#readme"
+  "name": "google-api-client",
+  "version": "2.0.5",
+  "description": "An OAuth2 Promise-based client for Google APIs.",
+  "main": "./lib/index",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "config": "latest"
+  },
+  "dependencies": {
+    "request": "2.x.x",
+    "bluebird": "3.3.x",
+    "promiseq": "0.1.x",
+    "lodash": "4.6.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cohere-io/google-api-client.git"
+  },
+  "keywords": [
+    "google",
+    "api"
+  ],
+  "author": "Kurt Freytag <kurt@cohere.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cohere-io/google-api-client/issues"
+  },
+  "homepage": "https://github.com/cohere-io/google-api-client#readme"
 }
